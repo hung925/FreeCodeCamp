@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Cảm ơn bạn đã làm mẫu khảo sát </p>
+    <form id=survey-form>
+        <fieldset>
+            <div>   
+            <label id="name-label" for="name">Họ Tên</label>
+            <input id="name" class="form-control" name="name" type="text" placeholder="value" required/>
+            <label id="email-label" for="email">Email</label>
+            <input id="email" class="form-control" name="email" type="email" placeholder="value" required>
+            <label id="number-label" for="number">Tuổi</label>
+            <input id="number" class="form-control" name="number" type="number" min="16" max="99" placeholder="value"/>
+        </div>
+        <div>
+            <select id="dropdown">
+            <option>hung dep trai</option>
+            <option>hung qua dep trai</option>
+        </div>
+        </select>
+            <div class="form-group">
+                <label>Lựa chọn những ngôn ngữ bạn đã học </label>
+                <div>
+                    <label>
+                <input name="name" type="radio" value="hung"/>hung
+            </label>
+                </div>
+                <div>
+                    <label>
+                <input name="name" type="radio" value="ho"/>ho
+            </label>
+                    </div>
+                    </div>
+
+                        <label>
+                <input name="box" type="checkbox" value="value" >ho
+            </label>
+                        <label>
+                <input name="check" type="checkbox" value="value">ho
+            </label>
+                        <label for="bio">
+                <textarea id="bio"
+                ></textarea>
+            </label>
+
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" class="submit-button">
+    </form>
+</body>
+
+</html>
